@@ -53,13 +53,6 @@ cnmem=1
 ldflags = -lopenblas
 EOF
 
-# Install Lasagne, pylearn2, nolearn
-#sudo pip install -r https://raw.githubusercontent.com/dnouri/kfkd-tutorial/master/requirements.txt
-#sudo pip install -r https://raw.githubusercontent.com/dnouri/kfkd-tutorial/master/requirements-2.txt
-sudo pip install --upgrade https://github.com/Lasagne/Lasagne/archive/master.zip
-sudo pip install --upgrade --no-deps git+git://github.com/dnouri/nolearn.git
-sudo pip install --upgrade --no-deps git+git://github.com/lisa-lab/pylearn2.git
-
 # Download CUDA(7.0) toolkit
 sudo wget http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1404/x86_64/cuda-repo-ubuntu1404_7.0-28_amd64.deb 
 # Depackage CUDA 
@@ -73,6 +66,15 @@ echo 'export PATH=/usr/local/cuda/bin:$PATH' >> .bashrc
 echo 'export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH' >> .bashrc
 echo 'export LIBRARY_PATH=/usr/local/cuda/lib64:$LIBRARY_PATH' >> .bashrc
 source ~/.bashrc
+
+
+# Install Lasagne, pylearn2, nolearn
+#sudo pip install -r https://raw.githubusercontent.com/dnouri/kfkd-tutorial/master/requirements.txt
+#sudo pip install -r https://raw.githubusercontent.com/dnouri/kfkd-tutorial/master/requirements-2.txt
+sudo pip install --upgrade https://github.com/Lasagne/Lasagne/archive/master.zip
+sudo pip install --upgrade --no-deps git+git://github.com/dnouri/nolearn.git
+sudo pip install --upgrade --no-deps git+git://github.com/lisa-lab/pylearn2.git
+
 
 # download data files and save them under /data
 # you have to save your own kaggle cookies to a local folder to download files  
