@@ -67,6 +67,8 @@ echo 'export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH' >> .bashrc
 echo 'export LIBRARY_PATH=/usr/local/cuda/lib64:$LIBRARY_PATH' >> .bashrc
 source ~/.bashrc
 
+# Reboot to load cuda 
+sudo reboot
 
 # Install Lasagne, pylearn2, nolearn
 #sudo pip install -r https://raw.githubusercontent.com/dnouri/kfkd-tutorial/master/requirements.txt
@@ -92,5 +94,3 @@ rm -rf www.kaggle.com/
 
 cd ~
 
-# Reboot to load cuda 
-sudo reboot
