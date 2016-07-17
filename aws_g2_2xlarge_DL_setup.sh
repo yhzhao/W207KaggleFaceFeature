@@ -82,7 +82,8 @@ sudo ldconfig /usr/local/cuda/lib64
 sudo pip install -r https://raw.githubusercontent.com/dnouri/kfkd-tutorial/master/requirements-2.txt
 
 # download data files and save them under /data
-# you have to save your own kaggle cookies to a local folder to download files  
+# you have to save your own kaggle cookies to a local folder to download files
+# In addition may have to mount /dev/xvdb to an working folder with written permission (e.g. sudo mount -t ext3 /dev/xvdb data)
 mkdir data
 cd data
 wget -x --load-cookies ~/cookies.txt https://www.kaggle.com/c/facial-keypoints-detection/download/training.zip
@@ -94,6 +95,9 @@ sudo apt-get install unzip
 unzip training.zip
 unzip test.zip
 rm -rf www.kaggle.com/
+rm test.zip  training.zip
+mkdir facial_keypoints_detection
+mv * facial_keypoints_detection/
 
 cd ~
 
