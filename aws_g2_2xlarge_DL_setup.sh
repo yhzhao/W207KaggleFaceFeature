@@ -31,7 +31,7 @@ sudo apt-get -y install python-dev python-pip python-setuptools
 sudo apt-get -y install python-nose python-numpy python-scipy python-matplotlib cython python-pandas python-sklearn python-skimage
 # Install ipython
 # we need to certificate for notebook and modify iPython profile for the remote access
-sudo pip install ipython
+sudo pip install "ipython[all]"
 
 # Install the bleeding-edge version of Theano
 # sudo pip install --upgrade theano
