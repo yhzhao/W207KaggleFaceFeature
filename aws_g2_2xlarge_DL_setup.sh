@@ -4,7 +4,7 @@ sudo apt-get -y upgrade
 sudo apt-get -y dist-upgrade
 
 # Install dependencies
-sudo apt-get -y install make cmake gcc g++ gfortran build-essential git wget freetype* linux-image-generic pkg-config  packaging-dev
+sudo apt-get -y install make cmake gcc g++ gfortran build-essential git wget freetype* linux-image-generic pkg-config  packaging-dev python-nose python-numpy python-scipy
 
 # Install LAPACK and openBLAS
 sudo apt-get install -y liblapack-dev
@@ -25,7 +25,12 @@ sudo apt-get -y install python-dev python-pip python-setuptools
 #mkvirtualenv deeplearning
 
 # Setting-up other Python packages 
-sudo pip install nose numpy scipy matplotlib cython scikit-learn scikit-image ipython pandas
+sudo pip install matplotlib
+sudo pip install cython
+sudo pip install scikit-learn
+sudo pip install scikit-image
+sudo pip install pandas
+sudo pip install ipython
 # for ipython we need to certificate for notebook and modify iPython profile for the remote access
 
 # Install the bleeding-edge version of Theano
