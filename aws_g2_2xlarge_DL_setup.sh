@@ -4,7 +4,7 @@ sudo apt-get -y upgrade
 sudo apt-get -y dist-upgrade
 
 # Install dependencies
-sudo apt-get -y install make cmake gcc g++ gfortran build-essential git wget freetype* linux-image-generic pkg-config 
+sudo apt-get -y install make cmake gcc g++ gfortran build-essential git wget freetype* linux-image-generic pkg-config  packaging-dev
 
 # Install LAPACK and openBLAS
 sudo apt-get install -y liblapack-dev
