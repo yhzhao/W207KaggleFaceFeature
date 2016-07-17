@@ -1,7 +1,5 @@
 # Preliminary Installation and Updates
-sudo apt-get -y update
-sudo apt-get -y upgrade
-sudo apt-get -y dist-upgrade
+sudo apt-get -y update && sudo apt-get -y dist-upgrade
 
 # Install dependencies
 sudo apt-get -y install make cmake gcc g++ gfortran build-essential git wget freetype* linux-image-generic pkg-config  packaging-dev 
@@ -65,10 +63,13 @@ sudo apt-get install -y cuda
 echo 'export PATH=/usr/local/cuda/bin:$PATH' >> .bashrc
 echo 'export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH' >> .bashrc
 echo 'export LIBRARY_PATH=/usr/local/cuda/lib64:$LIBRARY_PATH' >> .bashrc
-source ~/.bashrc
+
+#source ~/.bashrc
+#sudo ldconfig /usr/local/cuda/lib64
 
 # Reboot to load cuda 
 sudo reboot
+
 
 # Install Lasagne, pylearn2, nolearn
 #sudo pip install -r https://raw.githubusercontent.com/dnouri/kfkd-tutorial/master/requirements.txt
