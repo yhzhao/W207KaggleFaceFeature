@@ -10,7 +10,7 @@ sudo apt-get install -y liblapack-dev
 sudo apt-get install -y libopenblas-dev
 
 # install python stuffs
-sudo apt-get -y install python-dev python-pip python-setuptools python-nose python-numpy python-scipy
+sudo apt-get -y install python-dev python-pip python-setuptools 
 
 # It is better to install virtualenv and virtualenvwrapper:
 #sudo pip install virtualenv virtualenvwrapper
