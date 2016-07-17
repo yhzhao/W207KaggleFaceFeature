@@ -6,7 +6,7 @@ sudo apt-get -y install make cmake gcc g++ gfortran build-essential git wget fre
 
 # Install LAPACK and openBLAS
 sudo apt-get install -y liblapack-dev
-sudo apt-get install -y libblas-dev 
+#sudo apt-get install -y libblas-dev 
 sudo apt-get install -y libopenblas-dev
 
 # install python stuffs
@@ -22,14 +22,16 @@ sudo apt-get -y install python-dev python-pip python-setuptools python-nose pyth
 #Create your Deep Learning environment:
 #mkvirtualenv deeplearning
 
-# Setting-up other Python packages 
-sudo pip install matplotlib
-sudo pip install cython
-sudo pip install scikit-learn
-sudo pip install scikit-image
-sudo pip install pandas
+# A dirty installation of other python packages
+# sudo pip install matplotlib
+# sudo pip install cython
+# sudo pip install scikit-learn
+# sudo pip install scikit-image
+# sudo pip install pandas
+sudo apt-get -y install python-nose python-numpy python-scipy python-matplotlib cython python-pandas python-sklearn python-skimage
+# Install ipython
+# we need to certificate for notebook and modify iPython profile for the remote access
 sudo pip install ipython
-# for ipython we need to certificate for notebook and modify iPython profile for the remote access
 
 # Install the bleeding-edge version of Theano
 # sudo pip install --upgrade theano
