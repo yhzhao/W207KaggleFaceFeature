@@ -67,7 +67,6 @@ echo 'export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH' >> .bashrc
 echo 'export LIBRARY_PATH=/usr/local/cuda/lib64:$LIBRARY_PATH' >> .bashrc
 
 #source ~/.bashrc
-#sudo ldconfig /usr/local/cuda/lib64
 
 # Reboot to load cuda 
 sudo reboot
@@ -75,11 +74,12 @@ sudo reboot
 
 # Install Lasagne, pylearn2, nolearn
 #sudo pip install -r https://raw.githubusercontent.com/dnouri/kfkd-tutorial/master/requirements.txt
-#sudo pip install -r https://raw.githubusercontent.com/dnouri/kfkd-tutorial/master/requirements-2.txt
 sudo pip install --upgrade https://github.com/Lasagne/Lasagne/archive/master.zip
 sudo pip install --upgrade --no-deps git+git://github.com/dnouri/nolearn.git
-sudo pip install --upgrade --no-deps git+git://github.com/lisa-lab/pylearn2.git
-
+# Install nolearn
+#sudo pip install --upgrade --no-deps git+git://github.com/lisa-lab/pylearn2.git
+sudo ldconfig /usr/local/cuda/lib64
+sudo pip install -r https://raw.githubusercontent.com/dnouri/kfkd-tutorial/master/requirements-2.txt
 
 # download data files and save them under /data
 # you have to save your own kaggle cookies to a local folder to download files  
