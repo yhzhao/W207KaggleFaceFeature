@@ -6,7 +6,7 @@ sudo apt-get -y install make cmake gcc g++ gfortran build-essential git wget fre
 
 # Install LAPACK and openBLAS
 sudo apt-get install -y liblapack-dev
-#sudo apt-get install -y libblas-dev 
+sudo apt-get install -y libblas-dev 
 sudo apt-get install -y libopenblas-dev
 
 # install python stuffs
