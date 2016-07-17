@@ -72,11 +72,11 @@ echo 'export LIBRARY_PATH=/usr/local/cuda/lib64:$LIBRARY_PATH' >> .bashrc
 sudo reboot
 
 
-# Install Lasagne, pylearn2, nolearn
-#sudo pip install -r https://raw.githubusercontent.com/dnouri/kfkd-tutorial/master/requirements.txt
-sudo pip install --upgrade https://github.com/Lasagne/Lasagne/archive/master.zip
-sudo pip install --upgrade --no-deps git+git://github.com/dnouri/nolearn.git
-# Install nolearn
+# Install Lasagne, nolearn according to dnouri's kfkd-tutorial
+#sudo pip install --upgrade https://github.com/Lasagne/Lasagne/archive/master.zip
+#sudo pip install --upgrade --no-deps git+git://github.com/dnouri/nolearn.git
+sudo pip install -r https://raw.githubusercontent.com/dnouri/kfkd-tutorial/master/requirements.txt
+# Install pylearn2
 #sudo pip install --upgrade --no-deps git+git://github.com/lisa-lab/pylearn2.git
 sudo ldconfig /usr/local/cuda/lib64
 sudo pip install -r https://raw.githubusercontent.com/dnouri/kfkd-tutorial/master/requirements-2.txt
