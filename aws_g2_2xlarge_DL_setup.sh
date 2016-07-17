@@ -4,7 +4,7 @@ sudo apt-get -y upgrade
 sudo apt-get -y dist-upgrade
 
 # Install dependencies
-sudo apt-get -y install make cmake gcc g++ gfortran build-essential git wget freetype* linux-image-generic pkg-config  packaging-dev python-nose python-numpy python-scipy
+sudo apt-get -y install make cmake gcc g++ gfortran build-essential git wget freetype* linux-image-generic pkg-config  packaging-dev 
 
 # Install LAPACK and openBLAS
 sudo apt-get install -y liblapack-dev
@@ -12,7 +12,7 @@ sudo apt-get install -y liblapack-dev
 sudo apt-get install -y libopenblas-dev
 
 # install python stuffs
-sudo apt-get -y install python-dev python-pip python-setuptools 
+sudo apt-get -y install python-dev python-pip python-setuptools python-nose python-numpy python-scipy
 
 # It is better to install virtualenv and virtualenvwrapper:
 #sudo pip install virtualenv virtualenvwrapper
