@@ -1,0 +1,7 @@
+deepNet1.py: stacked conv net without pool (no padding)
+deepNet2.py: stacked conv net without pool, bigger filter size (no padding)
+finalNet6Tanh.py: Tanh non-linear func
+finalNet6_ext1.py: Attach one more conv and pool dropout at the beginning
+finalNet6_ext2.py: Attach one more conv and pool dropout at the end (before FC)
+finalNet6sigmoid.py: sigmoid non-linear func
+finalNetDctStack.py: Augment training set with lpf and hpf filter
