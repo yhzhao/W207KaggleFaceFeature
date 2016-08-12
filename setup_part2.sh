@@ -9,8 +9,10 @@ sudo pip install -r https://raw.githubusercontent.com/dnouri/kfkd-tutorial/maste
 sudo ldconfig /usr/local/cuda/lib64
 sudo pip install -r https://raw.githubusercontent.com/dnouri/kfkd-tutorial/master/requirements-2.txt
 
-pip install --upgrade https://github.com/Theano/Theano/archive/master.zip
-pip install --upgrade https://github.com/Lasagne/Lasagne/archive/master.zip
+# install Lasagne
+sudo pip install Lasagne==0.1
+sudo pip install --upgrade https://github.com/Theano/Theano/archive/master.zip
+sudo pip install --upgrade https://github.com/Lasagne/Lasagne/archive/master.zip
 
 # download data files and save them under /data
 # you have to save your own kaggle cookies to a local folder to download files
